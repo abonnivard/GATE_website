@@ -19,7 +19,7 @@ jobs:
         KEY: ${{ secrets.SSHKEY }}
       with:
         source: "."
-        target: "/home/logint/GATE"
+        target: "/home/${{ secrets.USERNAME }}/GATE"
 
 
     - name: Executing remote command
