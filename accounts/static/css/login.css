@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-spacing: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+}
+
+.container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+.title #title{
+    transform: translateY(100px);
+    position: relative;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.title img {
+    position: absolute;
+    min-width: 50%;
+    min-height: 50%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -100;
+}
+
+.above {
+    height: 100vh;
+    z-index: -99;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h1 {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+
+.form {
+    z-index: 10;
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    transform: translateY(200px);
+    -webkit-backdrop-filter: blur(6px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 10px 50px -10px #1f2121;
+}
+
+.form a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.form #submit {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    transform: translateY(20px);
+}
+
+.form form {
+    margin-top: 20%;
+}
+
+.parentIcon {
+    display: flex; height: 45px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+}
+.parentIcon a {
+    text-align: center;
+    transform: translateX(5px);
+    padding: 0 10px 0px 10px;
+    color: #240082;
+    font-size: 35px;
+    transition: all .4s;
+}
+.parentIcon a:hover {
+    color: #1f2121;
+}
+
+.copy {
+    height: 5vh;
+    display: flex; height: 29px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.copy p {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .title #title {
+        font-size:1.5rem;
+    }
+
+    .form {
+        transform: translateY(150px);
+        width: 300px;
+        height: 500px;
+    }
+
+
+    .parentIcon {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+        width: 100%;
+    }
+    .parentIcon a {
+        text-align: center;
+        width: 12%;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .copy {
+        height: 15%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 4px;
+    }
+}
+
+@media screen and (max-width: 700px) and (max-height: 720px) {
+
+    .form {
+        height: 400px;
+    }
+}

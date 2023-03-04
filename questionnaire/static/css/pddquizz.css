@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-spacing: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+#main {
+    height: 300vh;
+    position: relative;
+    background-image: url('../img/escheresque-dark-1920x1080.png');
+    background-size: contain;
+    color: white;
+}
+
+.above {
+    z-index: -99;
+    display: flex;
+    flex-direction: column;
+}
+
+.above #title {
+    transform: translateY(100px);
+    margin:0 auto;
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.cadre {
+    min-width: 300px;
+    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+    box-shadow: 10px 10px 50px -10px #102a75;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    position: relative;
+    width: 60%;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    transform: translateY(150px);
+    color: white;
+
+}
+
+.cadre_court {
+    min-width: 300px;
+    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+    box-shadow: 10px 10px 50px -10px #102a75;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    position: relative;
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    transform: translateY(150px);
+    color: white;
+}
+
+.cadre_qcm {
+    min-width: 300px;
+    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+    box-shadow: 10px 10px 50px -10px #102a75;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    position: relative;
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    transform: translateY(150px);
+    color: white;
+}
+
+.cadre_qcm_court {
+    min-width: 300px;
+    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+    box-shadow: 10px 10px 50px -10px #102a75;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    position: relative;
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    transform: translateY(150px);
+    color: white;
+}
+
+.cadre h3, .cadre_court h3, .cadre_qcm h3, .cadre_qcm_court h3 {
+    font-size: 1rem;
+}
+
+.reponse1 {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 0 auto;
+    transform: translateY(50px);
+    border-radius: 10px;
+    border:2px solid black;
+    margin-bottom: 10px;
+}
+
+.reponse {
+    width: 80%;
+    transform: translateY(80px);
+    margin: 0 auto;
+}
+
+.reponse1_qcm {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 0 auto;
+    transform: translateY(50px);
+    border-radius: 10px;
+    border:2px solid black;
+    margin-bottom: 10px;
+}
+
+.reponse1_qcm_rep {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 0 auto;
+    transform: translateY(50px);
+    margin-bottom: 10px;
+    color: green;
+    font-size: 1rem;
+}
+
+#submitrep {
+    width: 100%;
+    height: 35px;
+    background-color: #1f2121;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.input {
+    width: 5%;
+}
+
+
+
+#submit {
+    text-align: center;
+    width: 250px;
+    height: 75px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1f2121;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    outline: none;
+    margin: 0 auto;
+    transition: 0.2s;
+    transform: translateY(200px);
+}
+
+.parentIcon {
+    display: flex; height: 45px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+}
+.parentIcon a {
+    text-align: center;
+    transform: translateX(5px);
+    padding: 0 10px 0px 10px;
+    color: #240082;
+    font-size: 35px;
+    transition: all .4s;
+}
+.parentIcon a:hover {
+    color: #1f2121;
+}
+
+.copy {
+    height: 5vh;
+    display: flex; height: 29px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.copy p {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #title {
+        font-size: 1.5rem;
+        padding: 10px;
+        text-align: center;
+    }
+
+    label {
+        transform: translateX(10px);
+    }
+
+    .cadre h3, .cadre_court h3, .cadre_qcm h3, .cadre_qcm_court h3 {
+        font-size: 0.8rem;
+    }
+    .cadre, .cadre_court, .cadre_qcm, .cadre_qcm_court {
+        font-size: 0.8rem;
+                                       }
+}

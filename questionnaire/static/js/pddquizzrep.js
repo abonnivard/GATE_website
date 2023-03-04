@@ -1,0 +1,1 @@
+document.getElementsByName("qcm1").disabled = true;
