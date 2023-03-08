@@ -17,7 +17,7 @@
 #main {
     height: 300vh;
     position: relative;
-    background-image: url('../img/escheresque-dark-1920x1080.png');
+    background-image: url('../img/fond.png');
     background-size: contain;
     color: white;
 }
