@@ -914,7 +914,7 @@
 @media (max-width: 700px){
 
     #main {
-        height: 700vh;
+        height: 750vh;
     }
     .all1 {
         display: flex;
@@ -942,7 +942,7 @@
         font-size: 1.2rem;
     }
 
-    , .bouton11, .bouton12, .bouton13, .bouton21, .bouton22, .bouton23, .bouton31, .bouton32, .bouton33, .bouton41, .bouton42, .bouton43 {
+    .bouton11, .bouton12, .bouton13, .bouton21, .bouton22, .bouton23, .bouton31, .bouton32, .bouton33, .bouton41, .bouton42, .bouton43 {
         font-size: 1.2rem;
     }
 
