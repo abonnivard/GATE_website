@@ -17,7 +17,7 @@
 #main {
     height: 300vh;
     position: relative;
-    background-image: url('../img/asfalt--light--1920x1080.png');
+    background-image: url('../img/diagonal-striped-brick-1920x1080.png');
     background-size: contain;
     color: white;
 }
@@ -43,7 +43,7 @@ form {
     min-width: 300px;
     -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
     backdrop-filter: blur(15px);
-    box-shadow: 10px 10px 50px -10px #102a75;
+    box-shadow: 10px 10px 50px -10px white;
     border-radius: 10px;
     padding: 10px;
     border: 2px solid black;
@@ -61,7 +61,7 @@ form {
     min-width: 300px;
     -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
     backdrop-filter: blur(15px);
-    box-shadow: 10px 10px 50px -10px #102a75;
+    box-shadow: 10px 10px 50px -10px white;
     border-radius: 10px;
     padding: 10px;
     border: 2px solid black;
@@ -78,7 +78,7 @@ form {
     min-width: 300px;
     -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
     backdrop-filter: blur(15px);
-    box-shadow: 10px 10px 50px -10px #102a75;
+    box-shadow: 10px 10px 50px -10px white;
     border-radius: 10px;
     padding: 10px;
     border: 2px solid black;
@@ -95,7 +95,7 @@ form {
     min-width: 300px;
     -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
     backdrop-filter: blur(15px);
-    box-shadow: 10px 10px 50px -10px #102a75;
+    box-shadow: 10px 10px 50px -10px white;
     border-radius: 10px;
     padding: 10px;
     border: 2px solid black;
@@ -196,7 +196,7 @@ form {
     text-align: center;
     transform: translateX(5px);
     padding: 0 10px 0px 10px;
-    color: #240082;
+    color: #36082b;
     font-size: 35px;
     transition: all .4s;
 }
