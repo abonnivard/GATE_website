@@ -220,6 +220,10 @@ form {
     padding-bottom: 5px;
 }
 
+.copy a {
+    color: white;
+}
+
 @media screen and (max-width: 1000px) {
     #main {
         height: 350vh;

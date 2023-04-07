@@ -88,7 +88,7 @@ class ProtecContreLesMenacesLv1(models.Model):
     explication = models.CharField(max_length=1000, default="")
     qcm = models.BooleanField(default=False)
 
-class ProtecContreLesMenacesLv3(models.Model):
+class ProtecContreLesMenacesLv2(models.Model):
     numero = models.CharField(max_length=255)
     enonce = models.CharField(max_length=255)
     reponse1 = models.CharField(max_length=255)

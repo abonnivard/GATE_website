@@ -124,6 +124,10 @@ html, body {
     padding-bottom: 5px;
 }
 
+.copy a {
+    color: white;
+}
+
 @media screen and (max-width: 700px) {
     .title #title {
         font-size:1.5rem;

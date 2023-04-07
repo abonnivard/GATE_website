@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from .views import index, quizz, documentation
+from .views import index, quizz, documentation, cgu
 
 app_name = 'GATE2'
 
@@ -28,4 +28,5 @@ urlpatterns = [
     path('documentation/', documentation, name='documentation'),
     path('', include('accounts.urls')),
     path('',include('questionnaire.urls')),
+    path('cgu/', cgu, name='cgu'),
 ]

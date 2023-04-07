@@ -17,7 +17,7 @@
 #main {
     height: 300vh;
     position: relative;
-    background-image: url('../img/fond.png');
+    background-image: url('../img/diagonal-striped-brick-1920x1080.png');
     background-size: contain;
     color: white;
 }
@@ -61,7 +61,7 @@ form {
     min-width: 300px;
     -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
     backdrop-filter: blur(15px);
-    box-shadow: 10px 10px 50px -10px #102a75;
+    box-shadow: 10px 10px 50px -10px white;
     border-radius: 10px;
     padding: 10px;
     border: 2px solid black;
@@ -78,7 +78,7 @@ form {
     min-width: 300px;
     -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
     backdrop-filter: blur(15px);
-    box-shadow: 10px 10px 50px -10px #102a75;
+    box-shadow: 10px 10px 50px -10px white;
     border-radius: 10px;
     padding: 10px;
     border: 2px solid black;
@@ -95,7 +95,7 @@ form {
     min-width: 300px;
     -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
     backdrop-filter: blur(15px);
-    box-shadow: 10px 10px 50px -10px #102a75;
+    box-shadow: 10px 10px 50px -10px white;
     border-radius: 10px;
     padding: 10px;
     border: 2px solid black;
@@ -176,7 +176,7 @@ form {
 }
 
 input[disabled][checked]{
-  outline:1px solid blue; // or whatever
+  outline:1px solid white; // or whatever
 }
 
 #submit {
@@ -231,6 +231,10 @@ input[disabled][checked]{
 .copy p {
     margin-bottom: 0;
     padding-bottom: 5px;
+}
+
+.copy a {
+    color: white;
 }
 
 @media screen and (max-width: 1000px) {

@@ -18,3 +18,7 @@ def quizz(request):
 @login_required
 def documentation(request):
     return render(request, "GATE_website/documentation.html")
+
+
+def cgu(request):
+    return render(request, "GATE_website/cg.html")
