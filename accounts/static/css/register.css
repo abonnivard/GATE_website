@@ -52,7 +52,7 @@ html, body {
     position: relative;
     border-radius: 30px;
     width: 500px;
-    height: 650px;
+    height: auto;
     margin: 0 auto;
     transform: translateY(150px);
     -webkit-backdrop-filter: blur(6px); /* assure la compatibilité avec safari */
@@ -75,11 +75,13 @@ html, body {
 }
 
 .form form {
-    margin-top: 10px;
+     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .parentIcon {
-    display: flex; height: 45px;
+    display: flex;
+    height: 45px;
     align-items: center;
     justify-content: center;
     flex-direction: row;

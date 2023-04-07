@@ -875,7 +875,7 @@
     color: white;
 }
 .parentIcon {
-    display: flex; height: 45px;
+    display: flex; height: auto;
     align-items: center;
     justify-content: center;
     flex-direction: row;
@@ -896,8 +896,7 @@
 }
 
 .copy {
-    height: 5vh;
-    display: flex; height: 29px;
+    display: flex; height: auto;
     background-color: black;
     color: white;
     align-items: center;
