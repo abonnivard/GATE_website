@@ -46,7 +46,7 @@ def supprimer_compte(request):
     joueur.delete()
     user.delete()
     redirect(views.index)
-    print('ok')
+
     return render(request, 'GATE_website/index.html')
 
 
