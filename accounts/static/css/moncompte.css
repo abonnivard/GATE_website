@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-spacing: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/banner.jpg");
+}
+
+
+
+#main a {
+  text-align: center;
+  color: white;
+}
+
+#main {
+  padding-top: 30vh;
+  height: 100vh;
+}
+
+.all {margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: -100;
+  width: 100%;
+}
+
+.cadre {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+  -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4%;
+  box-shadow: 5px 5px 30px black;
+  color: white;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin-left: 10px;
+}
+
+.parentIcon {
+    display: flex; height: 45px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+}
+.parentIcon a {
+    text-align: center;
+    transform: translateX(5px);
+    padding: 0 10px 0px 10px;
+    color: #240082;
+    font-size: 35px;
+    transition: all .4s;
+}
+.parentIcon a:hover {
+    color: #1f2121;
+}
+
+.copy {
+    height: 5vh;
+    display: flex; height: 29px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.copy p {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.copy a {
+    color: white;
+}
+
+@media screen and (max-width: 700px){
+   .parentIcon {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+        width: 100%;
+    }
+    .parentIcon a {
+        text-align: center;
+        width: 12%;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .copy {
+        height: 15%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 4px;
+    }
+
+    .cadre {
+      width: 300px;
+      padding: 2px;
+    }
+}

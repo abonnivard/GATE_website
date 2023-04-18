@@ -1,10 +1,11 @@
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect
-
+from django.contrib.auth.models import User
 from GATE_website import views
 from questionnaire.models import Joueur
-# from django.contrib.auth.forms import UserCreationForm
 from .forms import UserForm
+from django.contrib.auth.decorators import login_required
+
 
 
 # Create your views here.
@@ -29,3 +30,22 @@ def register(request):
         'form': form,
     }
     return render(request, 'accounts/register.html', context)
+
+@login_required
+def moncompte(request):
+    user = User.objects.all().filter(username=request.user.username)[0]
+    context = {
+        'user':user
+    }
+    return render(request, 'accounts/moncompte.html')
+
+
+def supprimer_compte(request):
+    joueur = Joueur.objects.all().filter(username=request.user.username)[0]
+    user = User.objects.all().filter(username=request.user.username)[0]
+    joueur.delete()
+    user.delete()
+    redirect(views.index)
+    return render(request, 'GATE_website/index.html')
+
+

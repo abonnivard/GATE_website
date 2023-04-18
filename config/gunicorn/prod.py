@@ -7,7 +7,7 @@ wsgi_app = "GATE_website.wsgi:application"
 # The number of worker processes for handling requests
 workers = multiprocessing.cpu_count() * 2 + 1
 # The socket to bind
-bind = "0.0.0.0:8000"
+bind = "127.0.0.1:8000"
 # Write access and error info to /var/log
 accesslog = "/var/log/gunicorn/access.log"
 errorlog = "/var/log/gunicorn/error.log"

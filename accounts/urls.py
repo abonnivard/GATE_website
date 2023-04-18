@@ -18,7 +18,7 @@ from django.urls import path
 
 from GATE_website.views import index
 from .forms import UserLoginForm
-from .views import register
+from .views import register, supprimer_compte, moncompte
 
 app_name = 'accounts'
 
@@ -26,5 +26,8 @@ app_name = 'accounts'
 urlpatterns = [
     path('login/', views.LoginView.as_view(template_name="accounts/login.html", redirect_authenticated_user=True, authentication_form=UserLoginForm), name='login'),
     path('logout/', views.LogoutView.as_view(template_name="accounts/logout.html", next_page=index), name='logout'),
-    path('register/', register, name='register')
+    path('register/', register, name='register'),
+    path('moncompte/', moncompte, name='moncompte'),
+    path('supprimer/', supprimer_compte, name='supprimer_compte'),
+
 ]
