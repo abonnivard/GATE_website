@@ -184,7 +184,7 @@ form {
 }
 
 .parentIcon {
-    display: flex; height:auto;
+    display: flex; height: auto;
     align-items: center;
     justify-content: center;
     flex-direction: row;
