@@ -15,12 +15,20 @@ Including another URLconf
 """
 from django.urls import path
 
-from .views import pddquizz, pddquizzrep
+from .views import quizzrep, pddquizz1, pddquizz3, mdp1, pcm1, pcm2, pcm3, hn1, hn2, hn3
 
 app_name = 'questionnaire'
 
 
 urlpatterns = [
-    path("pddquizz/", pddquizz, name='pddquizz'),
-    path("pddquizzrep/", pddquizzrep, name="pddquizzrep"),
+    path("pddquizz1/", pddquizz1, name='pddquizz1'),
+    path("pddquizz3/", pddquizz3, name="pddquizz3"),
+    path('pcm1/', pcm1, name="pcm1"),
+    path('pcm2/', pcm2, name="pcm2"),
+    path('pcm3/', pcm3, name="pcm3"),
+    path('hn1/', hn1, name="hn1"),
+    path('hn2/', hn2, name="hn2"),
+    path('hn3/', hn3, name="hn3"),
+    path('mdp&auth1/', mdp1, name="mdp1"),
+    path("quizzrep/", quizzrep, name="quizzrep"),
 ]

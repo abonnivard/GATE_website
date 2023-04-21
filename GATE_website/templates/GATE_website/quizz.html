@@ -34,7 +34,7 @@
                 <div class="bas11">
 
                     <div class="bouton11">
-                        <a href="{% url 'questionnaire:pddquizz' %}" style="text-decoration: none; color: white">
+                        <a href="{% url 'questionnaire:pddquizz1' %}" style="text-decoration: none; color: white">
                         <p>Jouer</p>
                         </a>
                     </div>
@@ -69,6 +69,7 @@
                 </div>
                 <div class="bas13">
                     <div class="bouton13">
+                        <a href="{% url 'questionnaire:pddquizz3' %}" style="text-decoration: none; color: white">
                         <p>Jouer</p>
                     </div>
                     <div class="score13">
@@ -99,7 +100,7 @@
                 <div class="bas11">
 
                     <div class="bouton21">
-                        <a href="#" style="text-decoration: none; color: white">
+                        <a href="{% url 'questionnaire:pcm1' %}" style="text-decoration: none; color: white">
                         <p>Jouer</p>
                         </a>
                     </div>
@@ -118,7 +119,9 @@
                 </div>
                 <div class="bas12">
                     <div class="bouton22">
+                        <a href="{% url 'questionnaire:pcm2' %}" style="text-decoration: none; color: white">
                         <p>Jouer</p>
+                        </a>
                     </div>
                     <div class="score22">
                         <p>Score : {{joueur.qcmpcm2pourcentage}} %</p>
@@ -134,7 +137,9 @@
                 </div>
                 <div class="bas13">
                     <div class="bouton23">
+                        <a href="{% url 'questionnaire:pcm3' %}" style="text-decoration: none; color: white">
                         <p>Jouer</p>
+                        </a>
                     </div>
                     <div class="score23">
                         <p>Score : {{joueur.qcmpcm3pourcentage}} %</p>
@@ -164,7 +169,7 @@
                 <div class="bas11">
 
                     <div class="bouton31">
-                        <a href="#" style="text-decoration: none; color: white">
+                        <a href="{% url 'questionnaire:hn1' %}" style="text-decoration: none; color: white">
                         <p>Jouer</p>
                         </a>
                     </div>
@@ -183,7 +188,9 @@
                 </div>
                 <div class="bas32">
                     <div class="bouton32">
+                        <a href="{% url 'questionnaire:hn2' %}" style="text-decoration: none; color: white">
                         <p>Jouer</p>
+                        </a>
                     </div>
                     <div class="score32">
                         <p>Score : {{joueur.qcmhn2pourcentage}} %</p>
@@ -199,7 +206,9 @@
                 </div>
                 <div class="bas33">
                     <div class="bouton33">
+                        <a href="{% url 'questionnaire:hn3' %}" style="text-decoration: none; color: white">
                         <p>Jouer</p>
+                        </a>
                     </div>
                     <div class="score33">
                         <p>Score : {{joueur.qcmhn3pourcentage}} %</p>
@@ -229,7 +238,7 @@
                 <div class="bas11">
 
                     <div class="bouton41">
-                        <a href="#" style="text-decoration: none; color: white">
+                        <a href="{% url 'questionnaire:mdp1' %}" style="text-decoration: none; color: white">
                         <p>Jouer</p>
                         </a>
                     </div>
@@ -252,22 +261,6 @@
                     </div>
                     <div class="score42">
                         <p>Score : {{joueur.qcmmea2pourcentage}} %</p>
-                    </div>
-                </div>
-            </div>
-             <div class="cadrein43">
-                <div class="imagein43">
-                    <img src="{% static 'img/103089.png' %}" alt="">
-                </div>
-                <div class="niveau43">
-                    <p>Niveau 3 : Difficile</p>
-                </div>
-                <div class="bas33">
-                    <div class="bouton43">
-                        <p>Jouer</p>
-                    </div>
-                    <div class="score43">
-                        <p>Score : {{joueur.qcmmea3pourcentage}} %</p>
                     </div>
                 </div>
             </div>
@@ -299,3 +292,4 @@
 
 </body>
 </html>
+

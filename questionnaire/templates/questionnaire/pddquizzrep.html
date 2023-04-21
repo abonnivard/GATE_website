@@ -24,7 +24,6 @@
                         <div class="cadre_court">
                             <h3>{{ question.enonce | safe }}</h3>
                             <div class="reponse">
-                            <input id="submitrep" type="text" name="{{question.numero}}" placeholder="Répondre" required="">
                             </div>
                             {% if question.numero in vrai %}
                                 <div class="reponse1_qcm_rep">
@@ -156,7 +155,6 @@
                                 <p>{{question.reponce4}}</p>
                             </div>
                             <div class="reponse">
-                            <input id="submitrep" type="text" name="{{question.numero}}" placeholder="Répondre" required="">
                             </div>
                             {% if question.numero in vrai %}
                                 <div class="reponse1_qcm_rep">
@@ -175,8 +173,6 @@
 
 
         </div>
-
-
     </section>
 
     <footer>
@@ -196,3 +192,4 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
+

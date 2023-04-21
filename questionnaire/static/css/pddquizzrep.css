@@ -15,7 +15,7 @@
 }
 
 #main {
-    height: 300vh;
+    height: auto;
     position: relative;
     background-image: url('../img/diagonal-striped-brick-1920x1080.png');
     background-size: contain;
@@ -49,7 +49,7 @@ form {
     border: 2px solid black;
     position: relative;
     width: 60%;
-    height: 500px;
+    height: auto;
     margin: 0 auto;
     margin-bottom: 50px;
     transform: translateY(150px);
@@ -67,7 +67,7 @@ form {
     border: 2px solid black;
     position: relative;
     width: 60%;
-    height: 300px;
+    height: auto;
     margin: 0 auto;
     margin-bottom: 50px;
     transform: translateY(150px);
@@ -84,7 +84,7 @@ form {
     border: 2px solid black;
     position: relative;
     width: 60%;
-    height: 400px;
+    height: auto;
     margin: 0 auto;
     margin-bottom: 50px;
     transform: translateY(150px);
@@ -101,7 +101,7 @@ form {
     border: 2px solid black;
     position: relative;
     width: 60%;
-    height: 300px;
+    height: auto;
     margin: 0 auto;
     margin-bottom: 50px;
     transform: translateY(150px);
@@ -145,7 +145,7 @@ form {
     flex-direction: row;
     padding: 5px;
     margin: 0 auto;
-    transform: translateY(50px);
+    transform: translateY(35px);
     margin-bottom: 10px;
     color: green;
     font-size: 1rem;
@@ -156,11 +156,12 @@ form {
     flex-direction: row;
     padding: 5px;
     margin: 0 auto;
-    transform: translateY(50px);
+    transform: translateY(35px);
     margin-bottom: 10px;
     color: red;
     font-size: 1rem;
 }
+
 
 #submitrep {
     width: 100%;
@@ -194,6 +195,7 @@ input[disabled][checked]{
     margin: 0 auto;
     transition: 0.2s;
     transform: translateY(200px);
+    margin-bottom: 300px;
 }
 
 .parentIcon {
