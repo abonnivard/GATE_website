@@ -15,8 +15,236 @@
     {% block content %}
     {% endblock %}
 
+    <div class="main" >
+        <div class="all">
+            <div class="exodus">
+                <div class="exodus-texte">
+                    <div class="uparrow" id="exodus">
+                        <i class="fa-solid fa-caret-down"></i>
+                        <h1>Exodus</h1>
+                    </div>
+                    <div class="downarrow" id="exodus">
+                        <i class="fa-solid fa-caret-up"></i>
+                        <h1>Exodus</h1>
+                    </div>
+                    <div class="inf" id="exodus">
+                    <br>
+                    <h3>A quoi sert Exodus ?</h3>
+                    <br>
+                    <p>Exodus est un site internet qui propose un unique service. Il permet de connaitre les
+    autorisations que nécessite une application mobile pour fonctionner sur votre appareil.
+    De plus, le site propose plusieurs pages expliquant en détails ce qu’est un « tracker », leurs
+    utilités, ainsi que des informations sur les permissions des applications.</p><br>
+                    <h3>Comment utiliser le service fournit par Exodus ?</h3>
+                    <br>
+                    <p>Pour voir les « trackers » utilisées par une application, il suffit de se rendre sur le site
+    d’Exodus sur <a href="https://reports.exodus-privacy.eu.org/en/">ce lien</a></p>
+                    <p>La page d’accueil du site se présente comme ceci :</p>
+                    <img src="{% static 'img/exodus1.png' %}" alt="exodus">
+                    <p>Il suffit ensuite de rentrer le nom de l’application d’on on veut connaître les trackers quelle
+utilise dans la barre de recherche.</p>
+                    <p>Une fois le nom de l’application rentrer le site nous propose une liste parmi laquelle on peut
+choisir l’application voulue.</p>
+                    <p>On se retrouve alors sur une page qui liste les « trackeurs » ou pisteurs en français ainsi que
+les permissions que demande l’application.</p><br>
+                    <h3>Mise en situation</h3>
+                    <br>
+                    <p>Pour comprendre l’utilité d’un tel service, imaginons la situation suivante : une connaissance
+vous parle d’une nouvelle application à la mode et vous conseil de l’installer. Une fois arriver
+sur la page de l’application, et avant de l’avoir installé, vous vous demandez si l’application
+est de confiance.</p>
+                    <p>Connaissant le site exodus et vous rentrer le nom de l’application en question</p>
+                    <p>Pour cet exemple prenons Instagram, réseau sociale très populaire qui permet de partager
+des images. La page correspondant à cette application est la suivante : </p>
+                    <img src="{% static 'img/exodus2.png' %}" alt="exodus">
+                    <p>On peut voir deux éléments intéressants : le nombre de pisteur et le nombre de permissions
+demandé par l’application.</p>
+                    <p>On peut obtenir plus d’information sur les pisteurs en cliquant sur le nom, par exemple ici
+avec Facebook Flipper : </p>
+                    <img src="{% static 'img/exodus3.png' %}" alt="exodus">
+                    <p>Pour les permissions, celle ayant un point d’exclamation rouge sont jugées comme
+potentiellement dangereuse pour la vie privée de l’utilisateur</p>
+                    <br>
+                    <p>Dans notre exemple, Instagram demande l’accès à la position exacte de votre appareil lors
+de son utilisation :</p>
+                    <img src="{% static 'img/exodus4.png' %}" alt="exodus" class="loc">
+                    <p>Ce niveau est défini par Google et on peut trouver plus d’information au <a
+                            href="https://developer.android.com/guide/topics/permissions/overview?hl=fr">lien suivant</a></p>
+                    <br><br>
+                    <p>Finalement, le site communique des informations sur la signature de l’application :</p>
+                    <img src="{% static 'img/exodus5.png' %}" alt="exodus">
+                </div>
+                </div>
+            </div>
+            <div class="virusTotal">
+                <div class="virusTotal-texte">
+                     <div class="uparrow" id="virustotal">
+                        <i class="fa-solid fa-caret-down"></i>
+                        <h1>VirusTotal</h1>
+                    </div>
+                    <div class="downarrow" id="virustotal">
+                        <i class="fa-solid fa-caret-up"></i>
+                        <h1>VirusTotal</h1>
+                    </div>
+                    <div class="inf" id="virustotal">
+                    <h3>VirusTotal, qu’est-ce que c’est ?</h3><br>
+                    <p>VirusTotal est un service en ligne proposé par Hispasec Sistemas et qui
+utilise plusieurs antivirus pour servir de complément à celui de l’utilisateur.
+Il ne remplace pas un antivirus standard, cependant connaître son
+existence et la façon de l’utiliser peut s’avérer utile selon les circonstances.</p><br>
+                    <h3>Comment utilise-t-on VirusTotal ?</h3><br>
+                    <p>La présentation du site est très simple, et est représentée ci-dessous</p><br>
+                    <img src="{% static 'img/virustotal1.png' %}" alt="virustotal"><br>
+                    <p>Le site propose deux options principales pour les utilisateurs. On peut
+glisser déposer un fichier directement depuis son ordinateur lorsque
+l’option « File » est sélectionnée (comme ci-dessus), ou on peut rentrer
+l’URL d’un site lorsque l’option « URL » est sélectionnée (comme cidessous)</p><br>
+                    <img src="{% static 'img/virustotal2.png' %}" alt="virustotal"><br>
+                    <p>Une fois un fichier déposé ou une URL rentrée, le site va commencer son
+analyse. Après quelques instants, le résultat s’affiche à l’écran. Ici, on se
+sert de l’URL du site YouTube comme exemple.</p><br>
+                    <img src="{% static 'img/virustotal3.png' %}" alt="virustotal"><br>
+                    <p>Sur la partie haute de l’écran (ici entourée en rouge), on a un résumé
+rapide de l’analyse qui vient d’être faite, avec l’URL testée, le résultat ainsi
+que l’heure où l’analyse a été effectuée.</p><br>
+                    <p>Sur la partie basse, ainsi qu’en faisant défiler la page (en jaune), on a la
+liste de tous les antivirus qui ont été utilisés pour l’analyse ainsi que le
+résultat pour chacun d’entre eux.</p><br>
+                    <p>Pour un logiciel, l’écran des résultats (ci-dessous) est à peu près
+semblable. Ici, le fichier utilisé à titre d’exemple est l’installateur du
+navigateur Mozilla Firefox.</p><br>
+                    <img src="{% static 'img/virustotal4.png' %}" alt="virustotal"><br>
+                    <p>Première chose qu’on remarque, c’est qu’au lieu d’avoir le nom du fichier
+dans la partie haute, il y a un code qui semble incompréhensible. C’est
+parfaitement normal, il n’a pas pour but d’être compris par des humains,
+mais de servir de moyen aux antivirus utilisés de reconnaître et traiter
+rapidement le fichier. Ensuite, on remarque que malgré le fait que le fichier
+envoyé provient d’une source sûre (le site officiel de Mozilla), il y a quand
+même une alerte précisant que le fichier a attiré les soupçons d’un
+antivirus.</p><br>
+                    <p>En descendant plus bas sur la page, on voit le nom de l’antivirus à l’origine
+du signalement. Mais pour quelle raison a-t-il marqué le fichier comme
+potentiellement dangereux ?</p>
+                    <p>En passant le curseur sur le nom de l’antivirus, une explication apparaît :
+« Peut différer du produit disponible sur le commerce. L’entreprise décide
+les paramètres particuliers avec lesquels l’outil va travailler dans
+VirusTotal ».</p>
+                    <img src="{% static 'img/virustotal5.png' %}" alt="virustotal" class="petit"><br>
+                    <p>En effet, même si VirusTotal utilise plusieurs antivirus différents, il n’est
+pas à l’abri de faux positifs, même si les fichiers sont sûrs et/ou de source
+sûre.</p><br>
+                    <h3>VirusTotal est-il uniquement disponible via le site ?</h3><br>
+                    <p>Non, il existe aussi une application mobile, des extensions de navigateur
+ainsi qu’une application de bureau (le support a été discontinué pour
+Windows, toujours disponible pour Mac OS X et Linux).</p><br>
+                    <h3>Où dois-je aller pour utiliser VirusTotal ?</h3><br>
+                    <p>Voici les différents liens menant au site VirusTotal ainsi que leurs
+applications officielles :</p>
+                    <div class="link">
+                    <p><a href="https://www.virustotal.com/">Site internet</a></p>
+                    <p><a href="https://support.virustotal.com/hc/enus/articles/115002146549-Mobile-apps">Application mobile</a></p>
+                    <p><a href="https://support.virustotal.com/hc/enus/articles/115002179065-Desktop-apps">Application de bureau</a></p>
+                    <p><a href="https://support.virustotal.com/hc/enus/articles/115002700745-Browser-Extensions">Extension de navigateur</a></p>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <div class="protonVPN">
+                <div class="protonVPN-texte">
+                    <div class="uparrow" id="protonvpn">
+                        <i class="fa-solid fa-caret-down"></i>
+                        <h1>ProtonVPN</h1>
+                    </div>
+                    <div class="downarrow" id="protonvpn">
+                        <i class="fa-solid fa-caret-up"></i>
+                        <h1>ProtonVPN</h1>
+                    </div>
+                    <div class="inf" id="protonvpn">
+                    <h3>Prise en main de ProtoVPN :</h3><br>
+                    <p>Créer un compte et télécharger ProtonVPN : <a href="https://protonvpn.com/download">https://protonvpn.com/download</a>(version gratuite)</p>
+                    <p>Ouvrir l’application ProtonVPN.exe.</p>
+                    <p>Vous pouvez maintenant suivre les questions du niveau intermediaire de la section Mot de passe et authentification.</p>
+                    <br>
+                    <h3>Mise en situation</h3>
+                    <br>
+                    <p>Paul est un employé d'une entreprise qui travaille actuellement en télétravail. Il a besoin d'accéder aux
+ressources de l'entreprise, telles que les fichiers de projet et les logiciels de travail, depuis son domicile.
+Pour se connecter en toute sécurité à l'infrastructure de l'entreprise, Paul doit utiliser un VPN</p>
+                    <p>Avant de se connecter au VPN, Paul vérifie que son ordinateur portable dispose des dernières mises à
+jour de sécurité et des logiciels antivirus mis à jour. Il se connecte ensuite à Internet via son fournisseur
+d'accès à Internet local et lance l'application VPN fournie par son entreprise.</p>
+                    <p>L'application VPN demande à Paul de saisir son nom d'utilisateur et son mot de passe pour accéder au
+réseau de l'entreprise. Une fois que Paul a entré ses informations de connexion, l'application VPN se
+connecte à un serveur VPN de l'entreprise situé dans le centre de données de l'entreprise.</p>
+                    <p>Une fois connecté au VPN, Paul peut accéder à toutes les ressources de l'entreprise comme s'il était
+physiquement présent sur le réseau local de l'entreprise. Il peut accéder aux fichiers de projet, utiliser
+les logiciels de travail et communiquer avec ses collègues via des applications de messagerie
+instantanée et des e-mails.</p>
+                    <p>Pendant que Paul travaille sur le VPN, toutes les données qu'il envoie et reçoit sont cryptées pour
+protéger la confidentialité et la sécurité des informations de l'entreprise. Les données sont également
+protégées contre les attaques de pirates informatiques, car les protocoles de sécurité du VPN
+empêchent les intrus d'accéder aux données.</p>
+                    <p>Lorsque Paul a terminé son travail, il se déconnecte du VPN et ferme l'application VPN. La connexion
+au VPN est ainsi fermée et toutes les données sont effacées de son ordinateur portabl</p>
+                    <p>En utilisant un VPN, Paul peut travailler à distance en toute sécurité, sans avoir à se soucier de la
+sécurité de ses données ou de l'accès non autorisé aux ressources de l'entreprise.</p>
+</div>
+                </div>
+            </div>
+
+            <div class="keePass">
+                <div class="keePass-texte">
+                     <div class="uparrow" id="keepass">
+                        <i class="fa-solid fa-caret-down"></i>
+                        <h1>KeePass</h1>
+                    </div>
+                    <div class="downarrow" id="keepass">
+                        <i class="fa-solid fa-caret-up"></i>
+                        <h1>KeePass</h1>
+                    </div>
+                    <div class="inf" id="keepass">
+
+                    <p>1) Installer KeePass <a href="https://keepass.fr/">https://keepass.fr/</a></p>
+                    <p>2) Créer une nouvelle base de données avec un mot de passe sécurisé. Choisissez-le bien car
+c’est le seul que vous aurez à retenir. Nous vous conseillons d’utiliser les techniques
+présentées sur la section dédiez à cet effet sur le site.</p><br>
+                    <img src="{% static 'img/keepass1.png' %}" alt="keepass"><br>
+                    <p>3) Les groupes permettent d’organiser vos mots de passes par catégorie pour mieux les
+retrouver plus tard.</p><br>
+                    <img src="{% static 'img/keepass2.png' %}" alt="keepass"><br>
+                    <p>4) Créer une entrée vous pouvez lui donner un titre et y entrer les champs nécessaires : votre
+nom d’utilisateur, votre mot de passe que vous pouvez faire générer selon plusieurs critères
+(voir l’onglet prévu à cet effet à coter du champs Repeat. Le logiciel vous indique même la
+force de votre mot de passe. Vous pouvez également ajouter l’URL du site et définir une date
+de péremption pour votre mot de passe.</p><br>
+                    <img src="{% static 'img/keepass3.png' %}" alt="keepass"><br>
+                    <img src="{% static 'img/keepass4.png' %}" alt="keepass"><br>
+                    <p>5) Vous pouvez faire plein d’autres choses à l’aide de KeePass. Souvenez-vous de copier votre
+base de données régulièrement sur des supports de stockage externe pour éviter de perdre
+celle-ci.</p>
+
+                    </div>
+</div>
+                </div>
+        </div>
+    </div>
 
 
+
+    <footer>
+        <div class="parentIcon">
+            <a href="https://www.instagram.com/log_int_2023/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/log-int2023/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/abonnivard/GATE_website" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+
+        </div>
+        <div class="copy">
+            <p>Copyright © 2023 - Projet GATE Log'INT - <a href="../cgu/" target="_blank" rel="noopener noreferrer">Conditions générales d'utilisation</a>
+            </p>
+
+        </div>
+    </footer>
+    <script src="{% static 'js/document.js' %}"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

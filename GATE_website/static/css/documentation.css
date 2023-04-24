@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-spacing: 0;
+  box-sizing: border-box;
+}
+
+.main {
+    height: auto;
+    min-height: 92vh;
+    background-image: url("../img/documentation_background.png");
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+.all {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.uparrow {
+    display: flex;
+    flex-direction: row;
+    transform: translateY(10px);
+}
+
+.downarrow {
+    display: none;
+    flex-direction: row;
+    transform: translateY(10px);
+
+}
+
+i{
+    font-size: 2rem;
+}
+
+.uparrow h1 {
+    margin: 0 auto;
+}
+
+.downarrow h1 {
+    margin: 0 auto;
+}
+.inf {
+    display: none;
+    flex-direction: column;
+}
+
+
+.exodus {
+    padding: 10px;
+    color: white;
+    border-radius: 30px;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 10px 50px -10px #151111;
+     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(6px);
+    margin-bottom: 50px;
+}
+
+.exodus-texte {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.exodus img {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.exodus .loc{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.virusTotal {
+    padding: 10px;
+    color: white;
+    border-radius: 30px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 10px 50px -10px #151111;
+     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(6px);
+    margin-bottom: 50px;
+}
+
+.virusTotal-texte {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.virusTotal img {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.virusTotal .petit {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.protonVPN {
+    padding: 10px;
+    color: white;
+    border-radius: 30px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 10px 50px -10px #151111;
+     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(6px);
+    margin-bottom: 50px;
+}
+
+.protonVPN-texte {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.keePass {
+    padding: 10px;
+    color: white;
+    border-radius: 30px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 10px 50px -10px #151111;
+     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(6px);
+    margin-bottom: 50px;
+}
+
+.keePass-texte {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.keePass img {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+
+.parentIcon {
+    display: flex; height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+}
+.parentIcon a {
+    text-align: center;
+    transform: translateX(5px);
+    padding: 0 10px 0px 10px;
+    color: #3521a6;
+    font-size: 35px;
+    transition: all .4s;
+}
+.parentIcon a:hover {
+    color: #1f2121;
+}
+
+.copy {
+    display: flex; height: auto;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.copy p {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+.copy a {
+    color: white;
+}
+
+@media screen and (max-width:700px){
+
+    .exodus img {
+        width: 95%;
+    }
+}

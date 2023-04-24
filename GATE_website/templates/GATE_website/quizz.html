@@ -30,6 +30,7 @@
                 </div>
                 <div class="niveau11">
                     <p>Niveau 1 : les bases</p>
+                    <p style="font-size:0.8rem; margin-bottom: -20px; margin-top: -20px">Nécessite de se renseigner sur Cookie Scanner</p>
                 </div>
                 <div class="bas11">
 
@@ -50,10 +51,13 @@
                 </div>
                 <div class="niveau12">
                     <p>Niveau 2 : Intermediaire</p>
+                    <p style="font-size:0.8rem; margin-bottom: -37px; margin-top: -20px">Nécessite de se renseigner sur exodus et Cookie Scanner</p>
                 </div>
                 <div class="bas12">
                     <div class="bouton12">
-                        <p>Jouer</p>
+                        <a href="{% url 'questionnaire:pddquizz2' %}" style="text-decoration: none; color: white">
+                            <p>Jouer</p>
+                        </a>
                     </div>
                     <div class="score12">
                         <p>Score : {{joueur.qcmpdd2pourcentage}} %</p>
@@ -66,11 +70,13 @@
                 </div>
                 <div class="niveau13">
                     <p>Niveau 3 : Difficile</p>
+                    <p style="font-size:0.8rem; margin-bottom: -20px; margin-top: -20px">Nécessite de se renseigner sur Cookie Scanner</p>
                 </div>
                 <div class="bas13">
                     <div class="bouton13">
                         <a href="{% url 'questionnaire:pddquizz3' %}" style="text-decoration: none; color: white">
-                        <p>Jouer</p>
+                            <p>Jouer</p>
+                        </a>
                     </div>
                     <div class="score13">
                         <p>Score : {{joueur.qcmpdd3pourcentage}} %</p>
@@ -116,6 +122,8 @@
                 </div>
                 <div class="niveau12">
                     <p>Niveau 2 : Intermediaire</p>
+                    <p style="font-size:0.8rem; margin-bottom: -20px; margin-top: -20px">Nécessite de se renseigner sur VirusTotal</p>
+
                 </div>
                 <div class="bas12">
                     <div class="bouton22">
@@ -223,7 +231,7 @@
                     </div>
             </div>
         </div>
-        <div class="cadre1">
+        <div class="cadre-mdp">
             <div class="texte1">
                 <h1>Mot de passe et authentification</h1>
             </div>
@@ -254,10 +262,13 @@
                 </div>
                 <div class="niveau42">
                     <p>Niveau 2 : Intermediaire</p>
+                    <p style="font-size:0.8rem; margin-bottom: -20px; margin-top: -20px">Nécessite de se renseigner sur ProtonVPN</p>
                 </div>
                 <div class="bas42">
                     <div class="bouton42">
-                        <p>Jouer</p>
+                        <a href="{% url 'questionnaire:mdp2' %}" style="text-decoration: none; color: white">
+                            <p>Jouer</p>
+                        </a>
                     </div>
                     <div class="score42">
                         <p>Score : {{joueur.qcmmea2pourcentage}} %</p>
@@ -292,4 +303,3 @@
 
 </body>
 </html>
-

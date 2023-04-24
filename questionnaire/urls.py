@@ -15,13 +15,14 @@ Including another URLconf
 """
 from django.urls import path
 
-from .views import quizzrep, pddquizz1, pddquizz3, mdp1, pcm1, pcm2, pcm3, hn1, hn2, hn3
+from .views import quizzrep, pddquizz1, pddquizz2, pddquizz3, mdp1,mdp2, pcm1, pcm2, pcm3, hn1, hn2, hn3
 
 app_name = 'questionnaire'
 
 
 urlpatterns = [
     path("pddquizz1/", pddquizz1, name='pddquizz1'),
+    path("pddquizz2/", pddquizz2, name='pddquizz2'),
     path("pddquizz3/", pddquizz3, name="pddquizz3"),
     path('pcm1/', pcm1, name="pcm1"),
     path('pcm2/', pcm2, name="pcm2"),
@@ -30,5 +31,6 @@ urlpatterns = [
     path('hn2/', hn2, name="hn2"),
     path('hn3/', hn3, name="hn3"),
     path('mdp&auth1/', mdp1, name="mdp1"),
+    path('mdp&auth2/', mdp2, name="mdp2"),
     path("quizzrep/", quizzrep, name="quizzrep"),
 ]

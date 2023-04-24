@@ -5,6 +5,16 @@
             background-color: rgba(123, 0, 44, 0.37);
             border-radius: 8%;
         }
+
+        @media screen and (min-width: 1000px) {
+            #moncompte {
+            right:0px;
+            position: absolute;
+        }
+        }
+
+
+
     </style>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color:black ; padding: 0 ">
         <div class="container" style="padding-left: 0">
@@ -44,7 +54,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% url 'accounts:moncompte' %}" class="nav-link" style="transition: all .4s;right:0px;position: absolute;">
+                    <a href="{% url 'accounts:moncompte' %}" class="nav-link" style="transition: all .4s" id="moncompte">
                         Mon compte
                     </a>
                 </li>

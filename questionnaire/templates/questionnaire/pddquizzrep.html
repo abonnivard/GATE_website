@@ -27,7 +27,7 @@
                             </div>
                             {% if question.numero in vrai %}
                                 <div class="reponse1_qcm_rep">
-                                    <p>{{question.explication}}</p>
+                                    <p>{{ question.explication | safe }}</p>
                                 </div>
                             {% else %}
                                 <div class="reponse1_qcm_repf">
@@ -65,7 +65,7 @@
                             </div>
                             {% if question.numero in vrai %}
                                 <div class="reponse1_qcm_rep">
-                                    <p>{{question.explication}}</p>
+                                    <p>{{ question.explication | safe }}</p>
                                 </div>
                             {% else %}
                                 <div class="reponse1_qcm_repf">
@@ -130,7 +130,7 @@
                             </div>
                             {% if question.numero in vrai %}
                                 <div class="reponse1_qcm_rep">
-                                    <p>{{question.explication}}</p>
+                                    <p>{{ question.explication  | safe }}</p>
                                 </div>
                             {% else %}
                                 <div class="reponse1_qcm_repf">
@@ -158,7 +158,7 @@
                             </div>
                             {% if question.numero in vrai %}
                                 <div class="reponse1_qcm_rep">
-                                    <p>{{question.explication}}</p>
+                                    <p>{{ question.explication | safe }}</p>
                                 </div>
                             {% else %}
                                 <div class="reponse1_qcm_repf">

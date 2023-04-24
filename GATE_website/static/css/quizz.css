@@ -10,7 +10,7 @@
 #main {
     height: 300vh;
     background-color: #d7d7d7;
-    background-image: url("../img/diagonal-striped-brick-1920x1080.png");
+    background-image: url("../img/documentation_background.png");
 }
 
 .texte {
@@ -764,6 +764,19 @@
     border-radius: 10px;
     max-height: 100%;
 }
+.cadre-mdp {
+    color: white;
+    border-radius: 10px;
+    height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    transform: translateY(150px);
+    box-shadow: 0px 10px 50px -10px #151111;
+     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(6px);
+    margin-bottom: 100px;
+}
+
 
 .bas42 {
     transform: translateY(60px);
@@ -887,7 +900,7 @@
     text-align: center;
     transform: translateX(5px);
     padding: 0 10px 0px 10px;
-    color: #640a4e;
+    color: #3521a6;
     font-size: 35px;
     transition: all .4s;
 }
@@ -917,7 +930,7 @@
 @media (max-width: 700px){
 
     #main {
-        height: 750vh;
+        height: 730vh;
     }
     .all1 {
         display: flex;
@@ -931,6 +944,14 @@
         font-size: 0.8rem;
 
     }
+    .cadre-mdp {
+        width: 90%;
+        text-align: center;
+        height: 1000px;
+        font-size: 0.8rem;
+
+    }
+
 
     .bas11, .bas12, .bas21, .bas22, .bas31, .bas32, .bas41, .bas42 {
         padding: 10px;
@@ -949,8 +970,14 @@
         font-size: 1.2rem;
     }
 
+
+
     .niveau11 p, .niveau12 p, .niveau13 p, .niveau21 p, .niveau22 p, .niveau23 p, .niveau31 p, .niveau32 p, .niveau33 p, .niveau41 p, .niveau42 p, .niveau43 p {
         font-size: 1.5rem;
+    }
+
+    .bas13, .bas11 {
+        transform: translateY(45px);
     }
 
     .cadrein1, .cadrein12, .cadrein2, .cadrein22, .cadrein3, .cadrein32, .cadrein4, .cadrein42{
