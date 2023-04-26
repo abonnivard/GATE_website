@@ -1,7 +1,6 @@
 from django.db import models
 
 
-
 class MdpEtAuthLv1(models.Model):
     numero = models.CharField(max_length=255)
     enonce = models.CharField(max_length=255)

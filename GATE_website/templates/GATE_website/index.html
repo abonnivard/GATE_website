@@ -12,9 +12,13 @@
 </head>
 <body>
 
-    {% include 'GATE_website/navbar.html' %}
-    {% block content %}
-    {% endblock %}
+    {% if connected %}
+        {% include 'GATE_website/quizznavbar.html' %}
+    {% else %}
+        {% include 'GATE_website/navbar.html' %}
+    {% endif %}
+        {% block content %}
+        {% endblock %}
 
         <section id="background">
         <div class="title">

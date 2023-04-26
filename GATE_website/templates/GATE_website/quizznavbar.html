@@ -8,9 +8,17 @@
 
         @media screen and (min-width: 1000px) {
             #moncompte {
-            right:0px;
+            right:50px;
             position: absolute;
         }
+
+            #logout {
+                right:5px;
+                position: absolute;
+            }
+            #logout img{
+                width: 30px;
+            }
         }
 
 
@@ -43,21 +51,28 @@
                         Quizz
                     </a>
                 </li>
+
                 <li class="nav-item">
                     <a href="../documentation/" class="nav-link" style="transition: all .4s;">
                         Documentation
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% url 'accounts:logout' %}" class="nav-link" style="transition: all .4s;">
-                        Logout
+                    <a href="{% url 'contact:contact' %}" class="nav-link" style="transition: all .4s;">
+                        Nous contacter
                     </a>
                 </li>
-                <li class="nav-item">
+                 <li class="nav-item">
                     <a href="{% url 'accounts:moncompte' %}" class="nav-link" style="transition: all .4s" id="moncompte">
                         Mon compte
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{% url 'accounts:logout' %}" class="nav-link" style="transition: all .4s;" id="logout">
+                        <img src="{% static 'img/icon-logout.png' %}" alt="logout">
+                    </a>
+                </li>
+
 
             </ul>
         </div>

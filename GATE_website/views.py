@@ -5,7 +5,10 @@ from questionnaire.models import Joueur
 
 
 def index(request):
-    return render(request, "GATE_website/index.html")
+    context = {
+        "connected":request.user.is_authenticated
+    }
+    return render(request, "GATE_website/index.html", context)
 
 
 @login_required
